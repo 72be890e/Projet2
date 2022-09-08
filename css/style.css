@@ -1,8 +1,5 @@
-h1,
-nav {
-    font-family: Raleway, serif;
-    font-weight: normal;
-    box-sizing: border-box;
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
