@@ -47,18 +47,55 @@
 
 /* Header */
 .main-page header {
-    padding: 0 45px;
+    padding: 30px 45px;
 }
 
 .main-page header h2 {
     font-size: 20px;
     font-weight: 900;
-    margin: 20px 0;
+    margin: 0 0 0 0;
 }
 
 .main-page header p {
-    font-size: 13px;
+    font-size: 16px;
 
+}
+
+.search-form .fa-map-marker-alt {
+    position: absolute;
+    background-color: #F2F2F2;
+    padding: 17px;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-form .city {
+    padding: 17px;
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 46px;
+}
+
+.search-form .city:focus-visible {
+    outline: 2px solid #F2F2F2;
+}
+
+.search-button {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: #0065FC;
+    border: 0;
+    border-radius: 0 15px 15px 0;
+    height: 50px;
+    width: 120px;
+}
+
+.search-button-mobile {
+    /* We only display it on mobile */
+    display: none;
 }
 
 /* Phone layout */
@@ -88,7 +125,7 @@
         font-size: 16px;
         font-weight: 200;
         padding: 0 0 10px;
-        border-bottom: 3px solid #dcdcdc;
+        border-bottom: 3px solid #F2F2F2;
         width: 50vw;
         display: flex;
         justify-content: center;
@@ -98,5 +135,19 @@
     .links a:hover {
         border-top: 0px;
         border-bottom: 3px solid #0065FC;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .search-button-mobile {
+        display: inline;
+        color: #fff;
+        background-color: #0065FC;
+        padding: 16px;
+        border: 0;
+        border-radius: 15px;
+        margin: -20px;
     }
 }

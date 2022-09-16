@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap">
+    <script src="https://kit.fontawesome.com/d54c06ae56.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 
@@ -30,6 +31,16 @@
                 Trouvez votre hébergement pour des vacances de rêve
             </h2>
             <p>En plein centre ville ou en pleine nature</p>
+            <div class="search">
+                <form action="#" method="POST" class="search-form">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="city" class="city" value="Marseille, France" />
+                    <button type="submit" disabled class="search-button">Rechercher</button>
+                    <button type="submit" disabled class="search-button-mobile">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
         </header>
     </div>
 </body>
